@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>카카오 회원가입</title>
+</head>
+<body class="bg-light">
+	<div class="container mt-5">
+		<div class="card">
+			<div class="card-body">
+				
+	<h2 class="card-title">카카오 회원가입</h2>
+	
+	<form action="/users/kakaoregister" method="post">
+		<div class="form-group">
+		<label for = "email">아이디 : </label>
+		<input type="text" id="email" name="email" th:value="${kakaoInfo.email}" required/>
+		</div>
+		
+		<div class="form-group">
+		<label for = "password">비밀번호 : </label>
+		<input type="text" id="password" name="password" required/>
+		</div>
+		
+		<div class="form-group">
+		<label for = "userName">이름 : </label>
+		<input type="text" id="userName" name="userName" required/>
+		</div>
+		
+		<div class="form-group">
+		<label for = "nickname">닉네임 : </label>
+		<input type="text" id="nickname" name="nickname" th:value="${kakaoInfo.nickname}" required/>
+		</div>
+		<div class="form-group">
+		<label for = "userProfile">프로필 : </label>
+		<input type="text" id="userProfile" name="userProfile" required/>
+		</div>
+		<div class="form-group">
+		<label for = "userAddress">주소 : </label>
+		<input type="text" id="userAddress" name="userAddress" required/>
+		</div>
+		<div class="form-group">
+		<label for = "userIntroduction">간단 자기소개 : </label>
+		<input type="text" id="userIntroduction" name="userIntroduction" required/>
+		</div>
+		
+		
+		<input type="hidden" id="role" name="role" value="ROLE_USER"/>
+		
+		<button type="submit" class="btn btn-primary">가입하기</button>
+	</form>
+	
+	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

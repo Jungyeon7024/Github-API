@@ -1,0 +1,6 @@
+import { apiClient } from "./ApiClient";
+
+const JwtAuthenticationService = (username, password) =>
+  apiClient.post(`/authenticate`, { username, password });
+
+export default JwtAuthenticationService;

@@ -1,0 +1,207 @@
+.studyDetail_wrapper {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 5rem;
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.studyContent_title {
+  margin-top: 40px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 126.5%;
+  letter-spacing: -0.005em;
+  color: #000;
+  font-family: 'SejonghospitalBold', sans-serif;
+  color: #2c2f30;
+  font-size: 35px;
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'SejonghospitalBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.studyContent_user_date {
+  margin-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 3px solid #f2f2f2;
+  display: flex;
+  grid-gap: 15px;
+  gap: 15px;
+  align-items: center;
+}
+
+.studyContent_user {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.user_img {
+  cursor: pointer;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 8px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'SejonghospitalBold', sans-serif;
+}
+
+.studyContent_seperator {
+  width: 2px;
+  height: 20px;
+  background-color: #e2e2e2;
+}
+.studyContent_registerDate {
+  font-size: 18px;
+  color: #717171;
+  font-family: 'SejonghospitalBold', sans-serif;
+}
+
+.studyContent_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-row-gap: 24px;
+  row-gap: 24px;
+  margin-top: 60px;
+}
+
+.studyContent_contentWrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.studyInfo_title {
+  color: #717171;
+  margin-right: 36px;
+  font-family: 'SejonghospitalBold', sans-serif;
+}
+
+.studyInfo_title_a {
+  color: #333;
+  font-family: 'SejonghospitalBold', sans-serif;
+}
+
+.postContent_wrapper {
+  margin-top: 132px;
+  font-size: 1.125rem;
+  word-break: break-all;
+  line-height: 1.7;
+  letter-spacing: -0.004em;
+}
+
+.postInfo {
+  margin: 0;
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 24px;
+  border-bottom: 3px solid #f2f2f2;
+  font-family: 'SejonghospitalBold', sans-serif;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.postContent {
+  width: 100%;
+  margin: 40px auto 0;
+  display: flex;
+  font-family: 'SUITE-Regular';
+  text-align: left;
+}
+
+.commentInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.commentInput_comment {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+}
+
+.commentInput_count {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #939393;
+}
+
+.commentInput_container {
+  display: flex;
+  grid-gap: 15px;
+  gap: 15px;
+}
+
+.commentInput_profile {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.commentInput_commentText {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #939393;
+  border-radius: 4px;
+  font-family: 'SUITE-Regular';
+  font-size: 16px;
+}
+
+.commentInput_buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0 24px;
+}
+
+.commentInput_buttonComplete {
+  height: 40px;
+  background: #8ee3ff;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #525252;
+  font-size: 16px;
+  font-family: 'SUITE-Regular';
+  padding: 0 20px;
+  border: 0px;
+}

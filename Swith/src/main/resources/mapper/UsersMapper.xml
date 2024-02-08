@@ -1,0 +1,41 @@
+<!-- MembersMapper (myBatis) -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="lm.swith.user.mapper.UsersMapper">
+    
+
+
+	<!-- 회원등록 -->
+	<insert id ="insertUser" parameterType="lm.swith.user.model.SwithUser">
+		INSERT INTO USERS (EMAIL, PASSWORD, USERNAME, NICKNAME, USER_PROFILE, USERADDRESS, USER_INTRODUCTION, USER_ROLE)
+		VALUES(#{email}, #{password}, #{username}, #{nickname}, #{user_profile}, #{useraddress}, #{user_introduction}, #{role})
+	</insert>
+	
+	
+	<select id="findByEmail" parameterType="lm.swith.user.model.SwithUser">
+        SELECT * FROM Users WHERE EMAIL = #{email}
+    </select>
+   
+	
+	
+	<select id ="findByEmailAndPassword" parameterType="lm.swith.user.model.SwithUser">
+	SELECT * FROM Users WHERE email = #{email} AND PASSWORD = #{password}
+	</select>
+	
+	<select id = "findUserRole" parameterType="lm.swith.user.model.SwithUser">
+		SELECT * FROM Users WHERE ROLE = #{role}
+	</select>
+	<select id = "findUsersAll" parameterType="lm.swith.user.model.SwithUser">
+		SELECT * FROM Users
+	</select>
+	 
+	 <!-- 원정연 파트 -->
+	
+	
+    
+    
+    
+    
+    
+	
+</mapper>
